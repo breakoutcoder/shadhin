@@ -1,0 +1,21 @@
+{
+  "name": "shadhin/shadhin",
+  "description": "PHP Framework",
+  "authors": [
+    {
+      "name": "Md. Al Amin"
+    }
+  ],
+  "require": {
+    "ext-mysqli": "*",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "files": [
+      "app/Config/helpers/helpers.php"
+    ],
+    "psr-4": {
+      "App\\": "app/"
+    }
+  }
+}
