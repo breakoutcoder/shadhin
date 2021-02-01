@@ -5,6 +5,7 @@
 $issues = array();
 
 $missingExtensions = array();
+extension_loaded('json') || $missingExtensions[] = 'json';
 extension_loaded('mysqli') || $missingExtensions[] = 'mysqli';
 
 if ($missingExtensions) {

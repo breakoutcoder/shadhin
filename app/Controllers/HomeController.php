@@ -1,6 +1,9 @@
 <?php
 
 namespace App\Controllers;
+
+use App\Config\DB\DB;
+
 /**
  * Class HomeController
  * @package App\Controllers
@@ -8,11 +11,19 @@ namespace App\Controllers;
 class HomeController
 {
     /**
+     * @var
+     */
+    private static $instance;
+
+    /**
      * @return HomeController
      */
     static public function Router(): HomeController
     {
-        return new self();
+        if (!self::$instance){
+            self::$instance = new self();
+        }
+        return self::$instance;
     }
 
     /**

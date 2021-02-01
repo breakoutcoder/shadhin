@@ -5,7 +5,7 @@
  */
 function view($path)
 {
-    include "./resource/view/$path";
+    include basePath("/resource/view/$path");
 }
 
 /**
@@ -59,23 +59,6 @@ function removeFile($file, $location)
     }
 }
 
-/**
- * @param null $path
- * @return string
- */
-function asset($path = null): string
-{
-    $dir = '/public/';
-    if ($path) {
-        if ($path[0] == '/') {
-            $dir.= $path;
-        }
-        else{
-            $dir.= '/'.$path;
-        }
-    }
-    return $dir;
-}
 
 /**
  * @return object

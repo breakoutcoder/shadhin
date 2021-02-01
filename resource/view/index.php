@@ -1,8 +1,3 @@
-<?php
-if (strpos($_SERVER['PHP_SELF'], 'resource')) {
-    header('Location: /');
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
