@@ -10,4 +10,4 @@ use App\Config\DB\DB;
 
 DB::table('users');
 
-<p align="center" style="color: yellow">Full Docs Coming Soon.......</p>
+<p align="center" style="color: yellow">Full Docs Coming Soon......</p>
